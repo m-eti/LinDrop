@@ -4,7 +4,7 @@ LinDrop is a lightweight, local Linux server designed to seamlessly share files 
 
 ## Features
 
-- **Text & Links**: Instantly sync text and links directly to your Linux machine's clipboard.
+- **Clipboard Sync**: Instantly sync copied text and files from your Apple devices directly to your Linux machine's clipboard.
 - **File Transfers**: Send photos, videos, and documents straight to your Linux `~/Downloads/LinDrop` folder.
 - **Native Notifications**: Get instant desktop notifications when a file or text is received.
 - **Wayland & X11 Support**: Automatically detects and uses `wl-copy` or `xclip` for clipboard management.
@@ -36,7 +36,7 @@ Ensure you have the following installed on your Linux machine:
 
 To send data to LinDrop, you can use a companion client or Apple Shortcut:
 
-[**Download the LinDrop Apple Shortcut here**](https://www.icloud.com/shortcuts/2ec51b5ee69a4c768c4132fb63d1560b)
+[**Download the LinDrop Apple Shortcut here**](https://www.icloud.com/shortcuts/4cb2d94fc2014236bb72935269d43c8a)
 
 ### Configuring the Client
 1. Download and install the client or shortcut using the link above.
@@ -70,7 +70,7 @@ LinDrop runs as a background `systemd` user service. You can manage it with the 
 
 ## Uninstallation
 
-If you wish to remove Drop from your system, simply run the included uninstall script:
+If you wish to remove LinDrop from your system, simply run the included uninstall script:
 
 ```bash
 chmod +x uninstall.sh
