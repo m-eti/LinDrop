@@ -1,6 +1,5 @@
 import http.server
 import json
-import os
 import subprocess
 from pathlib import Path
 from datetime import datetime
@@ -20,7 +19,7 @@ class TransferService:
         if not self.config.get('copy_enabled'):
             return False
         try:
-            if os.environ.get('WAYLAND_DISPLAY'):
+            if self.config.get('wayland_display'):
                 subprocess.run(['wl-copy'], input=text.encode('utf-8'), check=True)
             else:
                 subprocess.run(['xclip', '-selection', 'clipboard'], input=text.encode('utf-8'), check=True)

@@ -1,6 +1,7 @@
 import json
 import secrets
 import logging
+import os
 from pathlib import Path
 
 logger = logging.getLogger("LinDrop")
@@ -14,6 +15,7 @@ class Config:
             "file_enabled": True,
             "save_path": str(Path.home() / "Downloads" / "LinDrop"),
             "notifications_enabled": True,
+            "wayland_display": True if os.environ.get('WAYLAND_DISPLAY') else False,
             "port": 7631,
             "auth_token": secrets.token_hex(16)
         }

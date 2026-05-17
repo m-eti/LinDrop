@@ -3,6 +3,7 @@
     "file_enabled": true,
     "save_path": "~/Downloads/LinDrop",
     "notifications_enabled": true,
+    "wayland_display": true,
     "port": 7631,
     "auth_token": "replace_with_your_secure_hex_token"
 }
